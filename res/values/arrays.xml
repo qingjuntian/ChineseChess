@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="levels">
+        <item>小白</item>
+        <item>菜鸟</item>
+        <item>新手</item>
+        <item>入门</item>
+        <item>初级</item>
+        <item>中级</item>
+        <item>高级</item>
+        <item>大师</item>
+        <item>特级大师</item>
+        <item>世界冠军</item>
+    </string-array>
+</resources>

@@ -1,0 +1,47 @@
+<resources>
+
+    <string name="app_name">中国象棋</string>
+    <string name="title_activity_chess_main">中国象棋</string>
+    <string name="ai_game">人机对战</string>
+    <string name="bluetooth_game">BT对战</string>
+    <string name="net_game">NET对战</string>
+    <string name="quit">退出游戏</string>
+    <string name="new_game">新局</string>
+    <string name="back">悔棋</string>
+    <string name="over">认输</string>
+    <string name="username">显示的用户名</string>
+    <string name="join_host">加入主机</string>
+    <string name="sync_room">同步房间信息</string>
+    <string name="start_game">开始游戏</string>
+    <string name="red_side">红棋</string>
+    <string name="black_side">黑棋</string>
+    <string name="your_color">你的颜色</string>
+    <string name="easy">简单</string>
+    <string name="normal">中等</string>
+    <string name="hard">困难</string>
+    <string name="level">计算机水平</string>
+    <string name="draw">和棋</string>
+    <string name="lost">认输</string>
+    <string name="return_main">返回</string>
+    <string name="empty"></string>
+    <string name="nickname">昵称</string>
+    <string name="new_host">新建主机</string>
+    <string name="discovery">查找设备</string>
+    <string name="menu_sound">开启音效</string>
+    <string name="author">thor.qin@gmail.com</string>
+    <string name="menu_no_sound">关闭音效</string>
+    <string name="menu_day_mode">日间模式</string>
+    <string name="menu_night_mode">夜间模式</string>
+	<string name="more_game">更多游戏</string>
+	<string name="prompt">提示</string>
+	<string name="menu_feedback">反馈</string>
+	<string name="adjust_difficulty">选择难度</string>
+	<string name="start">开始</string>
+	<string name="change_seat">换座</string>
+	<string name="vs">对阵</string>
+	<string name="ready">准备</string>
+	<string name="accountName">用户</string>
+	<string name="password">密码</string>
+	<string name="login">登录</string>
+	<string name="qqlogin">QQ用户登录</string>
+</resources>

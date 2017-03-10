@@ -1,0 +1,64 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="andren.game.china.chess"
+    android:versionCode="120"
+    android:versionName="1.2.0" >
+
+    <uses-sdk
+        android:minSdkVersion="3"
+        android:targetSdkVersion="9" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.GET_TASKS" /> 
+    
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+
+    <application
+        android:name="com.thor.chess.ChessApplication"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        android:largeHeap="true" >
+		<activity
+			android:name="com.tencent.tauth.AuthActivity"
+		    android:noHistory="true"
+		    android:launchMode="singleTask" >
+		    <intent-filter>
+		           <action android:name="android.intent.action.VIEW" />
+		           <category android:name="android.intent.category.DEFAULT" />
+		           <category android:name="android.intent.category.BROWSABLE" />
+		           <data android:scheme="tencent100543241" />
+		    </intent-filter>
+		</activity>
+        <activity
+            android:name="com.thor.chess.ChessMain"
+            android:label="@string/title_activity_chess_main" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+<!--         <activity android:name="com.umeng.example.update.UpdateHome" /> -->
+        
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="51bc8a9056240b556f03758a" >
+        </meta-data>
+<!--         <service -->
+<!--             android:name="com.umeng.common.net.DownloadingService" -->
+<!--             android:exported="true" -->
+<!--             android:process=":DownloadingService" > -->
+<!--         </service> -->
+        
+<!--    		<activity android:name="cn.waps.OffersWebView" android:configChanges="keyboardHidden|orientation" /> -->
+    </application>
+
+</manifest>

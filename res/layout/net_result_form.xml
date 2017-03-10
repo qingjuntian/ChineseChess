@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/net_result"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:paddingLeft="12dp"
+        android:textColor="#ffff00"
+        android:textSize="18dip" />
+    
+	<ImageView
+		android:id="@+id/separator"
+		android:layout_width="40dp"
+		android:layout_height="40dp"
+		android:layout_margin="1dp"
+		android:contentDescription="@string/empty"
+		android:padding="3dp"
+		android:src="@drawable/linepng" />
+
+    <LinearLayout
+        android:id="@+id/score_pannel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/result"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:gravity="left"
+            android:lineSpacingExtra="3dp"
+            android:lines="1"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ff0000"
+            android:textSize="14sp"
+            android:typeface="normal" />
+
+        <TextView
+            android:id="@+id/score1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:gravity="left"
+            android:lineSpacingExtra="3dp"
+            android:lines="1"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ff0000"
+            android:textSize="14sp"
+            android:typeface="normal" />
+    </LinearLayout>
+	<ImageView
+		android:id="@+id/separator2"
+		android:layout_width="40dp"
+		android:layout_height="40dp"
+		android:layout_margin="1dp"
+		android:contentDescription="@string/empty"
+		android:padding="3dp"
+		android:src="@drawable/linepng" />
+    <LinearLayout
+        android:id="@+id/total_score_pannel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/result"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/total_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:gravity="left"
+            android:lineSpacingExtra="3dp"
+            android:lines="1"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ff0000"
+            android:textSize="14sp"
+            android:typeface="normal" />
+
+        <TextView
+            android:id="@+id/total_score1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:gravity="left"
+            android:lineSpacingExtra="3dp"
+            android:lines="1"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ff0000"
+            android:textSize="14sp"
+            android:typeface="normal" />
+    </LinearLayout>
+	<ImageView
+		android:id="@+id/separator3"
+		android:layout_width="40dp"
+		android:layout_height="40dp"
+		android:layout_margin="1dp"
+		android:contentDescription="@string/empty"
+		android:padding="3dp"
+		android:src="@drawable/linepng" />
+	<LinearLayout
+        android:id="@+id/upgrade_pannel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/result"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/upgrade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:gravity="left"
+            android:lineSpacingExtra="3dp"
+            android:lines="1"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ff0000"
+            android:textSize="14sp"
+            android:typeface="normal" />
+
+        <TextView
+            android:id="@+id/upgrade1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:gravity="left"
+            android:lineSpacingExtra="3dp"
+            android:lines="1"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ff0000"
+            android:textSize="14sp"
+            android:typeface="normal" />
+    </LinearLayout>
+</RelativeLayout>
