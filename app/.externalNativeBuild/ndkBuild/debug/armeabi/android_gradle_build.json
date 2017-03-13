@@ -1,0 +1,11 @@
+{
+  "buildFiles": [
+    "/Users/qingjun/workspace/ChineseChess/app/src/main/jni/Application.mk",
+    "/Users/qingjun/workspace/ChineseChess/app/src/main/jni/Application.mk"
+  ],
+  "cleanCommands": [],
+  "libraries": {},
+  "toolchains": {},
+  "cFileExtensions": [],
+  "cppFileExtensions": []
+}

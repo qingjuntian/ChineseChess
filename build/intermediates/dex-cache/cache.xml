@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/Users/qingjun/workspace/ChineseChess1/app/libs/mta-sdk-1.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="1d1a215c3acd13ef011b8391cab495f7760c2a1d">
+        <dex dex="/Users/qingjun/workspace/ChineseChess1/app/build/intermediates/transforms/dex/debug/folders/1000/2/mta-sdk-1.0.0_9b6f14e92931469e71e87d4a7d994c664b09cab6/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/qingjun/workspace/ChineseChess1/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="3101633662823c158aa39d5399530422b8fdd3a8">
+        <dex dex="/Users/qingjun/workspace/ChineseChess1/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_56ee85f0d3efb93ae1cf0771e799ce2b8d26444a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/qingjun/workspace/ChineseChess1/app/libs/libGoogleAnalyticsV2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6c48a1a1621e55c66fa6a381642916385c9dd781">
+        <dex dex="/Users/qingjun/workspace/ChineseChess1/app/build/intermediates/transforms/dex/debug/folders/1000/2/libGoogleAnalyticsV2_148cb9aba5cc2416126549d9991c2fa2068edeb6/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/qingjun/workspace/ChineseChess1/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c82741bc129dd5f99f11a4ab8666ae24262053b6">
+        <dex dex="/Users/qingjun/workspace/ChineseChess1/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_8d83c261316130315cd76484903e568b28662e87/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/qingjun/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpcore/4.3.2/31fbbff1ddbf98f3aa7377c94d33b0447c646b6e/httpcore-4.3.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="31fbbff1ddbf98f3aa7377c94d33b0447c646b6e">
+        <dex dex="/Users/qingjun/workspace/ChineseChess1/app/build/intermediates/transforms/dex/debug/folders/1000/10/httpcore-4.3.2_dd1a30db9d3ad2c3db7778c0650b2e48426ccbc4/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/qingjun/workspace/ChineseChess1/app/libs/open_sdk.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="48959cea0169c9c7f4b3822fcd7b168cdba3994b">
+        <dex dex="/Users/qingjun/workspace/ChineseChess1/app/build/intermediates/transforms/dex/debug/folders/1000/2/open_sdk_6e7b260c90393e4dc814155a52e947427a0c4a26/classes.dex" />
+    </item>
+
+</items>

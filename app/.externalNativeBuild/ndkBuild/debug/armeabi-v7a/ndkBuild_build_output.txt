@@ -1,0 +1,9 @@
+rm -f /Users/qingjun/workspace/ChineseChess/app/build/intermediates/ndkBuild/debug/lib/armeabi-v7a/*
+rm -f /Users/qingjun/workspace/ChineseChess/app/build/intermediates/ndkBuild/debug/lib/armeabi-v7a/gdbserver
+rm -f /Users/qingjun/workspace/ChineseChess/app/build/intermediates/ndkBuild/debug/lib/armeabi-v7a/gdb.setup
+mkdir -p /Users/qingjun/workspace/ChineseChess/app/build/intermediates/ndkBuild/debug/lib/armeabi-v7a
+echo [armeabi-v7a] "Gdbserver      ": "[arm-linux-androideabi] /Users/qingjun/workspace/ChineseChess/app/build/intermediates/ndkBuild/debug/lib/armeabi-v7a/gdbserver"
+install -p /Users/qingjun/Library/Android/sdk/ndk-bundle/prebuilt/android-arm/gdbserver/gdbserver /Users/qingjun/workspace/ChineseChess/app/build/intermediates/ndkBuild/debug/lib/armeabi-v7a/gdbserver
+echo [armeabi-v7a] "Gdbsetup       ": "/Users/qingjun/workspace/ChineseChess/app/build/intermediates/ndkBuild/debug/lib/armeabi-v7a/gdb.setup"
+echo "set solib-search-path /Users/qingjun/workspace/ChineseChess/app/build/intermediates/ndkBuild/debug/obj/local/armeabi-v7a" > /Users/qingjun/workspace/ChineseChess/app/build/intermediates/ndkBuild/debug/lib/armeabi-v7a/gdb.setup
+echo "directory /Users/qingjun/Library/Android/sdk/ndk-bundle/platforms/android-9/arch-arm /Users/qingjun/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++" >> /Users/qingjun/workspace/ChineseChess/app/build/intermediates/ndkBuild/debug/lib/armeabi-v7a/gdb.setup

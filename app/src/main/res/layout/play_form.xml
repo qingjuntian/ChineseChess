@@ -1,0 +1,306 @@
+<com.thor.chess.ChessLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android1="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentTop="true"
+    android:layout_gravity="top"
+    android1:layout_margin="0pt"
+    android:gravity="top|center_horizontal"
+    android:orientation="vertical"
+    android1:background="@drawable/face" >
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" >
+
+        <TextView
+            android:id="@+id/PointsTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:paddingLeft="12dp"
+            android:textColor="#ffff00"
+            android:textSize="18dip"
+            android:visibility="invisible" />
+		
+        <ImageView
+            android1:id="@+id/ImageView2"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_centerInParent="true"
+            android:layout_margin="0dp"
+            android:cropToPadding="true"
+            android:focusable="false"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/chess_title"
+            android1:contentDescription="@string/empty" />
+    </RelativeLayout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android1:id="@+id/RelativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android1:layout_alignParentLeft="true"
+        android1:layout_below="@+id/title"
+        android:background="@drawable/linepng"
+        android:gravity="top"
+        android:paddingBottom="3dp"
+        android:paddingTop="3dp">
+
+        <com.thor.chess.ChessView
+            android:id="@+id/chess_board"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:android1="http://schemas.android.com/apk/res/android"
+        android1:id="@+id/RelativeLayout01"
+        android1:layout_width="match_parent"
+        android1:layout_height="wrap_content"
+        android1:layout_alignParentBottom="true"
+        android1:layout_alignParentLeft="true"
+        android1:layout_alignParentRight="true"
+        android1:layout_below="@+id/RelativeLayout1"
+        android1:layout_margin="0pt"
+        android1:background="#b0c0c0c0"
+        android1:orientation="vertical"
+        android1:padding="3dp" >
+
+        
+        <LinearLayout
+            android:id="@+id/players_info"
+            android1:layout_width="wrap_content"
+            android1:layout_height="wrap_content"
+            android1:layout_alignParentLeft="true"
+            android1:layout_alignParentRight="true"
+            android1:orientation="horizontal" >
+
+            <ImageView
+		        android:id="@+id/player_image"
+	            android:layout_width="40dp"
+	            android:layout_height="40dp"
+		        android:layout_margin="1dp"
+		        android:contentDescription="@string/empty"
+		        android:padding="3dp"
+		        android:src="@drawable/humen" />
+            
+	        <LinearLayout
+	            android:id="@+id/player_info"
+	            android1:layout_width="wrap_content"
+	            android1:layout_height="wrap_content"
+	            android1:orientation="vertical" >
+	            <TextView
+	                android1:id="@+id/player_name"
+	                android1:layout_width="wrap_content"
+	                android1:layout_height="wrap_content"
+	                android1:layout_weight="0"
+	                android1:gravity="left"
+	                android1:lineSpacingExtra="3dp"
+	                android1:lines="1"
+	                android1:textAppearance="?android:attr/textAppearanceMedium"
+	                android1:textColor="#ff0000"
+	                android1:textSize="14sp"
+	                android1:typeface="normal" />
+	            <TextView
+	                android1:id="@+id/player_level"
+	                android1:layout_width="wrap_content"
+	                android1:layout_height="wrap_content"
+	                android1:gravity="left"
+	                android1:layout_weight="0.20"
+	                android1:textAppearance="?android:attr/textAppearanceMedium"
+	                android1:textColor="#000000"
+	                android1:textSize="14sp" />
+	            <TextView
+	                android1:id="@+id/player_status"
+	                android1:layout_width="wrap_content"
+	                android1:layout_height="wrap_content"
+	                android1:gravity="left"
+	                android1:layout_weight="0.20"
+	                android1:textAppearance="?android:attr/textAppearanceMedium"
+	                android1:textColor="#000000"
+	                android1:textSize="14sp" />
+        	</LinearLayout>
+            <TextView
+                android1:id="@+id/text_vs"
+                android1:layout_width="0dip"
+                android1:layout_height="wrap_content"
+                android1:layout_weight="0.20"
+	            android1:layout_gravity="center_horizontal"
+	            android1:gravity="center_horizontal"
+                android1:textAppearance="?android:attr/textAppearanceMedium"
+                android1:textColor="#ff0000"
+                android1:textSize="14sp" 
+                android:text="@string/vs" />
+            
+	        <LinearLayout
+	            android:id="@+id/partner_info"
+	            android1:layout_width="wrap_content"
+	            android1:layout_height="wrap_content"
+	            android1:orientation="vertical" >
+	            <TextView
+	                android1:id="@+id/partner_name"
+	                android1:layout_width="wrap_content"
+	                android1:layout_height="wrap_content"
+	                android1:layout_weight="0"
+	                android1:lineSpacingExtra="3dp"
+	                android1:gravity="right"
+	                android1:lines="1"
+	                android1:textAppearance="?android:attr/textAppearanceMedium"
+	                android1:textColor="#ff0000"
+	                android1:textSize="14sp"
+	                android1:typeface="normal" />
+	
+	            <TextView
+	                android1:id="@+id/partner_level"
+	                android1:layout_width="wrap_content"
+	                android1:layout_height="wrap_content"
+	                android1:gravity="right"
+	                android1:layout_weight="0.20"
+	                android1:textAppearance="?android:attr/textAppearanceMedium"
+	                android1:textColor="#000000"
+	                android1:textSize="14sp" />
+	            <TextView
+	                android1:id="@+id/partner_status"
+	                android1:layout_width="wrap_content"
+	                android1:layout_height="wrap_content"
+	                android1:gravity="right"
+	                android1:layout_weight="0.20"
+	                android1:textAppearance="?android:attr/textAppearanceMedium"
+	                android1:textColor="#000000"
+	                android1:textSize="14sp" />
+        	</LinearLayout>
+            <ImageView
+		        android:id="@+id/partner_image"
+	            android:layout_width="40dp"
+	            android:layout_height="40dp"
+		        android:layout_margin="1dp"
+		        android:contentDescription="@string/empty"
+		        android:padding="3dp"
+		        android:src="@drawable/humen" />
+            
+        </LinearLayout>
+        
+        <LinearLayout
+            android:id="@+id/notify_info"
+            android1:layout_width="wrap_content"
+            android1:layout_height="wrap_content"
+            android1:layout_alignParentLeft="true"
+            android1:layout_alignParentRight="true"
+            android:layout_below="@+id/players_info"
+            android1:orientation="horizontal" >
+
+            <TextView
+                android1:id="@+id/text_info"
+                android1:layout_width="wrap_content"
+                android1:layout_height="wrap_content"
+                android1:layout_weight="0"
+                android1:gravity="center_vertical"
+                android1:lineSpacingExtra="3dp"
+                android1:lines="1"
+                android1:textAppearance="?android:attr/textAppearanceMedium"
+                android1:textColor="#000000"
+                android1:textSize="14dp"
+                android1:typeface="normal" />
+
+            <TextView
+                android1:id="@+id/text_msg"
+                android1:layout_width="wrap_content"
+                android1:layout_height="wrap_content"
+                android1:layout_weight="0.20"
+                android1:textAppearance="?android:attr/textAppearanceMedium"
+                android1:textColor="#ff0000"
+                android1:textSize="14dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android1:id="@+id/btn_grid"
+            android1:layout_width="match_parent"
+            android1:layout_height="wrap_content"
+            android1:layout_alignParentBottom="true"
+            android1:layout_alignParentTop="false"
+            android1:layout_below="@+id/notify_info"
+            android:gravity="center_horizontal" >
+
+            <Button
+                android1:id="@+id/btn_start"
+                style="?android:attr/buttonStyleSmall"
+                android1:layout_width="wrap_content"
+                android1:layout_height="wrap_content"
+                android1:minWidth="60dp"
+                android1:text="@string/start" />
+            
+            <Button
+                android1:id="@+id/btn_change_seat"
+                style="?android:attr/buttonStyleSmall"
+                android1:layout_width="wrap_content"
+                android1:layout_height="wrap_content"
+                android1:minWidth="60dp"
+                android1:text="@string/change_seat" />
+            
+            <Button
+                android1:id="@+id/btn_again"
+                style="?android:attr/buttonStyleSmall"
+                android1:layout_width="wrap_content"
+                android1:layout_height="wrap_content"
+                android1:minWidth="60dp"
+                android1:text="@string/new_game" />
+
+            <Button
+                android1:id="@+id/btn_undo"
+                style="?android:attr/buttonStyleSmall"
+                android1:layout_width="wrap_content"
+                android1:layout_height="wrap_content"
+                android1:minWidth="60dp"
+                android1:text="@string/back" />
+
+            <Button
+                android1:id="@+id/btn_draw"
+                style="?android:attr/buttonStyleSmall"
+                android1:layout_width="wrap_content"
+                android1:layout_height="wrap_content"
+                android1:minWidth="60dp"
+                android1:text="@string/draw" />
+
+            <Button
+                android1:id="@+id/btn_giveup"
+                style="?android:attr/buttonStyleSmall"
+                android1:layout_width="wrap_content"
+                android1:layout_height="wrap_content"
+                android1:minWidth="60dp"
+                android1:text="@string/lost" />
+
+            <Button
+                android1:id="@+id/btn_prompt"
+                style="?android:attr/buttonStyleSmall"
+                android1:layout_width="wrap_content"
+                android1:layout_height="wrap_content"
+                android1:minWidth="60dp"
+                android1:visibility="gone"
+                android1:text="@string/prompt" />
+
+            <Button
+                android1:id="@+id/btn_return"
+                style="?android:attr/buttonStyleSmall"
+                android1:layout_width="wrap_content"
+                android1:layout_height="wrap_content"
+                android1:minWidth="60dp"
+                android1:text="@string/return_main" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</com.thor.chess.ChessLayout>
